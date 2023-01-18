@@ -1,0 +1,18 @@
+Architecture & design
+The architecture of the program is based on a simple command-line interface (CLI) that takes input from the user and performs the corresponding action. The program uses a HashMap to store the candidates and their respective vote count. The key of the HashMap is the candidate's name and the value is their vote count.
+
+The program starts by initializing a Scanner object to take input from the user and a HashMap to store the candidates and their votes. The program then displays a menu of options to the user and waits for input. Depending on the input received, the program performs the corresponding action.
+
+For example, if the user inputs "entercandidate", the program prompts the user to enter a candidate's name, adds the candidate to the HashMap with a vote count of 0, and displays a message that the candidate has been added.
+
+If the user inputs "castvote", the program prompts the user to enter a candidate's name and increments the vote count of the corresponding candidate in the HashMap. If the candidate is not present in the HashMap, the program displays a message that the candidate is not eligible.
+
+If the user inputs "countvote", the program prompts the user to enter a candidate's name and displays the vote count of that candidate. If the candidate is not present in the HashMap, the program displays a message that the candidate is not eligible.
+
+If the user inputs "listvote", the program displays the current vote count for all the candidates.
+
+If the user inputs "getwinner", the program iterates over the HashMap and finds the candidate with the maximum vote count. The program then displays the name of the winner and their vote count.
+
+If the user inputs "exit", the program displays a message that the program has been exited and terminates. If the user inputs any other option, the program displays a message to enter a proper option.
+
+Overall, this program is a basic implementation of a voting system that demonstrates the use of HashMap and basic control flow constructs like if-else and switch-case in Java. However, it lacks several features that would be required for a production-ready voting system such as age validation, voter registration, and a secure method of voting.
